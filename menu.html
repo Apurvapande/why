@@ -1,0 +1,117 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Project</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+<style>
+*{
+		margin:0;
+		padding:0;
+		font-family: 'Noto Sans', sans-serif;
+	}
+	body{
+		height:100vh;
+		width:100vw;
+	}
+	section.background{
+		height:100vh;
+		width:100vw;
+		background-color: #EFFFFD;
+	}
+	nav h1{
+		color:#e67e22;
+		font-size:30px;
+	}
+	nav{
+		display:flex;
+		padding:2% 6%;
+		justify-content:space-between;
+		align:centre;
+		font-size:20px;
+	}
+	nav-links{
+		flex:1;
+		text-align:right;
+	}
+	li{
+		list-style:none;
+		display:inline-block;
+		padding:8px 12px;
+		position:relative;
+	}
+	li a{
+		color:#e67e22;
+		text-decoration:none;
+	}
+	li::after{
+		content:'';
+		width:0%;
+		height:2px;
+		background:#e67e22;
+		display:block;
+		margin:auto;
+		transition:0.5s;
+	}
+	li:hover::after{
+		width:100%;
+	}
+	section.about{
+		width:90%;
+		color:#e67e22;
+	}
+	p{
+		position:absolute;
+		top:25%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		text-align:center
+		overflow-wrap:break-word;
+		color:#e67e22;
+		
+	}
+	video{
+		position:absolute;
+		top:35%;
+		left:30%;
+		width:40%;
+		height:40%;
+		border:10px solid #f0932b;
+	}
+	
+	
+	
+
+</style>
+</head>
+<body>
+	<section class="background">
+		<nav>
+			<h1><a style="text-decoration:none" href="index.html"><font color=#e67e22>Apurva Pande</font></a></h1>
+				<div class="nav-links">
+					<ul>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="menu.html">Video Composition</a></li>
+					</ul>
+				</div>
+		</nav>
+		<div class="vc">
+				<p>
+				The video is shot on Google Pixel 6 and edited on Adobe Premiere Pro.
+				</p>
+				<video width="600" height="450" controls>
+					<source src="vc.mp4" type="video/mp4">
+					
+				</video>
+		</div>
+		
+	
+
+</body>
+
+</html>
